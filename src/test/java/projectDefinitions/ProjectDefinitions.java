@@ -29,6 +29,7 @@ public class ProjectDefinitions {
     @Then("the <result> should be on the screen")
     public void the_result_should_be_on_the_screen()throws InterruptedException {
 System.out.println("hej");
+
     }
 
 }
