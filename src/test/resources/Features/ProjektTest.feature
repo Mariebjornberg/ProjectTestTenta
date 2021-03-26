@@ -9,3 +9,12 @@
     When I press sign up
     Then the <result> should be on the screen
 
+    Scenario Outline: sign up
+      Given I have entered my "<email>"
+      Given I have also entered a "<username>"
+      And I have also selected a "<password>"
+      When I press sign up
+      Then the "<result>" should be on the screen
+      Examples:
+        | email | username | password | result |
+        |lillakatten| katten | kakkaka   |  |
